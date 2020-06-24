@@ -1,0 +1,53 @@
+.section-contact {
+  padding: 6rem;
+  text-align: center;
+  background-color: #4c6680;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.section-contact h2 {
+  font-size: 2.8rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+.section-contact > p {
+  max-width: 42rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-top: 1rem;
+}
+.section-contact > .links a {
+  margin-top: 1.5rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  text-shadow: none;
+  background: none;
+  display: inline-block;
+  color: #92adff;
+}
+.section-contact > .links a i {
+  margin-right: 0.5rem;
+}
+.section-contact > p > a {
+  color: currentColor;
+  background: linear-gradient(currentcolor, currentcolor);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 100% calc(100% - 1px);
+  text-shadow: -0.06em 1px 0 #4c6680, 0.06em 1px 0 #4c6680;
+}
+.section-contact > .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+.section-contact > .buttons > .bx-button {
+  margin: 0.75rem;
+}

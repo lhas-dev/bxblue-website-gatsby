@@ -1,0 +1,59 @@
+.section-testimonials {
+  background-color: #79f;
+  padding: 6rem;
+}
+.section-testimonials > .title {
+  color: #fff;
+  text-align: center;
+  font-size: 2.8rem;
+  line-height: 3rem;
+  font-weight: 500;
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+.section-testimonials > .testimonials {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.section-testimonials > .testimonials > .testimonial {
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.section-testimonials > .testimonials > .testimonial > .text {
+  text-align: center;
+  z-index: 1;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01em;
+}
+.section-testimonials > .testimonials > .testimonial > .name {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+.section-testimonials > .testimonials > .testimonial > .institution,
+.section-testimonials > .testimonials > .testimonial > .date {
+  color: #9bb3ca;
+  margin-top: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+.section-testimonials > .testimonials > .testimonial .stars {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.section-testimonials > .testimonials > .testimonial .star {
+  margin-right: 0.5rem;
+  margin-top: 0.75rem;
+  text-shadow: 1px 1px 10px rgba(76, 102, 128, 0.3), 0px 0px 2px #000;
+  color: #ffdc4b;
+}

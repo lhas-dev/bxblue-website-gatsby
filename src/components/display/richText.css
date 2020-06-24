@@ -1,0 +1,16 @@
+.section-richtext {
+  padding: 6rem;
+  color: #333333;
+}
+
+.section-richtext h1 {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-richtext p {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
