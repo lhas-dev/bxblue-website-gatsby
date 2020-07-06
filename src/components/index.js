@@ -6,6 +6,7 @@ import DisplayRichText from "./display/richText"
 import DisplayTestimonials from "./display/testimonials"
 import NavigationFooter from "./navigation/footer"
 import NavigationNavbar from "./navigation/navbar"
+import NavigationBreadcrumb from "./navigation/breadcrumb"
 
 const tree = {
   "display.contact": props => <DisplayContact {...props} />,
@@ -14,6 +15,7 @@ const tree = {
   "display.rich-text": props => <DisplayRichText {...props} />,
   "display.testimonials": props => <DisplayTestimonials {...props} />,
   "navigation.navbar": props => <NavigationNavbar {...props} />,
+  "navigation.breadcrumb": props => <NavigationBreadcrumb {...props} />,
   "navigation.footer": props => <NavigationFooter {...props} />,
 }
 

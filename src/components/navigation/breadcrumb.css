@@ -1,0 +1,14 @@
+.bx-breadcrumb {
+  background-color: #ebf0f5;
+}
+.bx-breadcrumb > .container {
+  padding: 2em 6em;
+  display: flex;
+}
+.bx-breadcrumb > .container > p {
+  margin: 0px 10px;
+  color: #9bb3ca;
+}
+.bx-breadcrumb > .container > a {
+  color: #9bb3ca;
+}
