@@ -5,7 +5,6 @@ import "./testimonials.css"
 const getDate = date => moment(date, "YYYY-MM-DD").format("DD/MM/YYYY")
 
 const Testimonials = props => {
-  console.log(props)
   return (
     <section className="section-testimonials">
       <h2 className="title">Veja o que os usuários falam da gente</h2>

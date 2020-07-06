@@ -1,0 +1,23 @@
+.bx-partners {
+  background-color: #9bb3ca;
+}
+
+.bx-partners > .container {
+  padding: 2em 6em;
+}
+
+.bx-partners > .container > .list {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  flex-direction: row;
+}
+
+.bx-partners > .container > .list > li {
+  list-style-type: none;
+  margin-right: 1em;
+}
+
+.bx-partners > .container > .list > li > a > img {
+  height: 60px;
+}

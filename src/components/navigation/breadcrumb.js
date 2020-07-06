@@ -2,7 +2,6 @@ import React from "react"
 import "./breadcrumb.css"
 
 const Breadcrumb = props => {
-  console.log(props)
   return (
     <nav className="bx-breadcrumb">
       <div className="container">
