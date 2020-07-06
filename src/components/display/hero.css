@@ -4,12 +4,12 @@
   padding-top: 4rem;
   padding-bottom: 4rem;
   color: #fff;
-  min-height: 75vh;
+  min-height: 55vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background-image: url(https://d3n0fx8toel08x.cloudfront.net/assets/new_layout/hero-884afa2f416b4aaae8be88849bb8e3637e6dc253183ba9bf646bc7c0c3e51247.jpg);
+  background-color: #242e4d;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,11 +21,20 @@
   font-weight: 500;
   font-family: "Roboto", Helvetica, sans-serif;
   max-width: 700px;
-}
-
-.section-hero > .title {
   text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
   margin-top: 2rem;
+}
+
+.section-hero > .title > em {
+  background-image: linear-gradient(
+    180deg,
+    transparent 25%,
+    #79f 25%,
+    #79f 90%,
+    transparent 90%
+  );
+  color: #fff;
+  font-style: normal;
 }
 
 .section-hero > .bx-button {
