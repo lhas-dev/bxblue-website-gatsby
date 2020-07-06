@@ -1,4 +1,5 @@
 import React from "react"
+import DisplayBenefits from "./display/benefits"
 import DisplayContact from "./display/contact"
 import DisplayHero from "./display/hero"
 import DisplayPurpose from "./display/purpose"
@@ -11,6 +12,7 @@ import NavigationNavbar from "./navigation/navbar"
 import NavigationBreadcrumb from "./navigation/breadcrumb"
 
 const tree = {
+  "display.benefits": props => <DisplayBenefits {...props} />,
   "display.contact": props => <DisplayContact {...props} />,
   "display.hero": props => <DisplayHero {...props} />,
   "display.purpose": props => <DisplayPurpose {...props} />,
