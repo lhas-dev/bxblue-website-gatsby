@@ -9,7 +9,7 @@ const Partners = props => {
           {props.PartnerItem.map(item => (
             <li key={item.id}>
               <a href={item.URL}>
-                <img src={item.Image.url} />
+                <img src={item.Image.url} alt={item.URL} />
               </a>
             </li>
           ))}

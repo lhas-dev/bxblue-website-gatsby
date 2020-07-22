@@ -18,6 +18,7 @@ const Contact = props => {
           className="-facebook"
           href="https://www.facebook.com/bxbluebr"
           target="_blank"
+          rel="noreferrer"
         >
           <i className="fab fa-facebook-f"></i>
           <span>Facebook</span>

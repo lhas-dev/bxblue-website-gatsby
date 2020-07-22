@@ -7,17 +7,19 @@ const Breadcrumb = props => {
       <div className="container">
         <a href="https://bxblue.com.br">Página Inicial</a>
         <p>
-          <i class="fas fa-chevron-right"></i>
+          <i className="fas fa-chevron-right"></i>
         </p>
         {props.BreadcrumbItem.map((item, index) => (
-          <>
-            <a href={item.URL}>{item.Label}</a>
+          <React.Fragment key={index}>
+            <a key={index} href={item.URL}>
+              {item.Label}
+            </a>
             {index < props.BreadcrumbItem.length - 1 && (
               <p>
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
               </p>
             )}
-          </>
+          </React.Fragment>
         ))}
       </div>
     </nav>
