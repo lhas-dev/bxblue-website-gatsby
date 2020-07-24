@@ -1,4 +1,5 @@
 import React from "react"
+import Markdown from "react-markdown"
 import "./hero.css"
 
 const Hero = props => {
@@ -15,6 +16,12 @@ const Hero = props => {
       <a className="bx-button -overdark -large" href={props.button_link}>
         {props.button_text}
       </a>
+      {props.mostrar_aviso && (
+        <div className="notice">
+          <i className="fa fa-exclamation-triangle"></i>
+          <Markdown source={props.aviso} />
+        </div>
+      )}
     </section>
   )
 }
