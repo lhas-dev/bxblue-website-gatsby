@@ -48,31 +48,10 @@
   color: #fff;
   margin-left: 1rem;
 }
-
-.bx-button.-small {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  font-size: 1rem;
-  line-height: 1.25rem;
-}
-
-.bx-button {
-  max-width: 100%;
-  white-space: normal;
-  display: inline-flex;
-  font-family: "Roboto", Helvetica, sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.05em;
+.bx-navigation .links > .link.-primary {
   color: #6b8ae6;
   background-color: #fff;
   border-radius: 7px;
   cursor: pointer;
-  text-align: center;
-  justify-content: center;
-  transition: all 0.2s;
-  transform: translateY(0px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
-  text-decoration: none;
+  padding: 0.5rem;
 }
