@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "@reach/router"
-import "./navbar.css"
+import logo from "../../../images/logo.png"
+import "./navbar.scss"
 
 const getUrl = menu => {
   let url = ""
@@ -34,17 +35,24 @@ const getMenuComponent = menu => {
 }
 
 const Navbar = props => {
+  const [visible, setVisible] = useState(false)
+
+  const handleBars = () => {
+    const newVisible = !visible
+    setVisible(newVisible)
+  }
   return (
-    <header className="bx-header">
+    <header className="bx-header -big">
       <div className="bx-navigation">
         <Link className="logo" to="/">
-          bxblue
+          <img src={logo} alt="bxblue" />
         </Link>
-        <div className="actions">
+        <div className={`actions ${visible ? "-visible" : ""}`}>
           <nav className="links">
             {props.menu.map(menu => getMenuComponent(menu))}
           </nav>
         </div>
+        <i className="fa fa-bars" onClick={handleBars}></i>
       </div>
     </header>
   )

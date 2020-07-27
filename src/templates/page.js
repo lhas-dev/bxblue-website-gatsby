@@ -8,13 +8,13 @@ const Page = props => {
     <>
       <SEO title={props.pageContext.name} />
       {props.pageContext.components.map((component, index) => (
-        <div key={index}>
+        <React.Fragment key={index}>
           {!!ComponentsTree[component["__component"]] &&
             ComponentsTree[component["__component"]]({
               ...component,
               ...props.pageContext,
             })}
-        </div>
+        </React.Fragment>
       ))}
     </>
   )
