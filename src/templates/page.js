@@ -12,7 +12,7 @@ const Page = props => {
           {!!ComponentsTree[component["__component"]] &&
             ComponentsTree[component["__component"]]({
               ...component,
-              menu: props.pageContext.menu,
+              ...props.pageContext,
             })}
         </div>
       ))}
