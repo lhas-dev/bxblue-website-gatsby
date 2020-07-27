@@ -1,6 +1,6 @@
 import React from "react"
 import moment from "moment"
-import "./testimonials.css"
+import "./testimonials.scss"
 
 const getDate = date => moment(date, "YYYY-MM-DD").format("DD/MM/YYYY")
 
