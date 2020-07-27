@@ -1,6 +1,6 @@
 import React from "react"
 import Markdown from "react-markdown"
-import "./richText.css"
+import "./richText.scss"
 
 const RichText = props => {
   return (
