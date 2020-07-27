@@ -7,8 +7,8 @@ const Page = props => {
   return (
     <>
       <SEO title={props.pageContext.name} />
-      {props.pageContext.components.map(component => (
-        <div key={component["__component"]}>
+      {props.pageContext.components.map((component, index) => (
+        <div key={index}>
           {!!ComponentsTree[component["__component"]] &&
             ComponentsTree[component["__component"]]({
               ...component,
