@@ -4,7 +4,11 @@ import "./richText.scss"
 
 const RichText = props => {
   return (
-    <section className="section-richtext">
+    <section
+      className={`section-richtext ${
+        props.featured_image_position === "direita" ? "-direita" : ""
+      }`}
+    >
       {!!props.featured_image &&
         props.featured_image_position === "esquerda" && (
           <img

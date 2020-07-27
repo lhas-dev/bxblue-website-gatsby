@@ -1,2 +1,59 @@
 .section-banks-list {
+  width: 100%;
+  background: #bcd;
+  text-align: center;
+  padding: 2rem;
+}
+
+.section-banks-list > h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.section-banks-list > .list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.section-banks-list > .list > li {
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.section-banks-list > .list > li > a > img {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .section-banks-list > .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .section-banks-list > .list > li {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-banks-list {
+    padding: 6rem;
+  }
+  .section-banks-list > h1 {
+    font-size: 2.5rem;
+  }
+  .section-banks-list > .list {
+    margin-top: 4rem;
+  }
+  .section-banks-list > .list > li {
+    flex-basis: 33%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-banks-list > .list > li {
+    flex-basis: 20%;
+  }
 }

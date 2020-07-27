@@ -5,6 +5,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  &.-direita {
+    flex-direction: column-reverse;
+  }
 }
 
 .section-richtext h1 {

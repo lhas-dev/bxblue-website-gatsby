@@ -21,6 +21,9 @@ exports.createPages = async ({ graphql, actions }) => {
   const testimonials = await fetch(
     `${process.env.API_URL}/depoimentos`
   ).then(res => res.json())
+  const banks = await fetch(`${process.env.API_URL}/bancos`).then(res =>
+    res.json()
+  )
 
   const home = pages.find(page => page.slug === "home")
 
