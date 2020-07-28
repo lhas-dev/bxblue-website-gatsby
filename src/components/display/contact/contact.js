@@ -1,5 +1,5 @@
 import React from "react"
-import "./contact.css"
+import "./contact.scss"
 
 const Contact = props => {
   return (
@@ -25,10 +25,13 @@ const Contact = props => {
         </a>
       </p>
       <div className="buttons">
-        <a className="bx-button" href="/aprenda">
+        <a className="bx-button" href="https://bxblue.com.br/aprenda">
           Visite nosso blog
         </a>
-        <a className="bx-button" href="/produtos/emprestimo-consignado">
+        <a
+          className="bx-button"
+          href="https://bxblue.com.br/produtos/emprestimo-consignado"
+        >
           Faça uma simulação
         </a>
       </div>

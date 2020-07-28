@@ -1,25 +1,28 @@
 .section-contact {
-  padding: 6rem;
+  padding: 2rem;
   text-align: center;
   background-color: #4c6680;
   color: #fff;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 10rem;
-  padding-bottom: 8rem;
 }
 
 .section-contact h2 {
-  font-size: 2.8rem;
-  line-height: 3rem;
+  font-size: 2.2rem;
+  line-height: 1.25;
   font-weight: 500;
 }
 .section-contact > p {
   max-width: 42rem;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.25;
   margin-top: 1rem;
+}
+.section-contact > .links {
+  display: flex;
+  flex-direction: column;
 }
 .section-contact > .links a {
   margin-top: 1.5rem;
@@ -50,4 +53,19 @@
 }
 .section-contact > .buttons > .bx-button {
   margin: 0.75rem;
+}
+
+@media (min-width: 992px) {
+  .section-contact {
+    padding: 5rem 2rem;
+  }
+  .section-contact h2 {
+    font-size: 2.75rem;
+  }
+  .section-contact > p {
+    font-size: 1.5rem;
+  }
+  .section-contact > .links {
+    flex-direction: row;
+  }
 }
