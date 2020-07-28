@@ -18,9 +18,14 @@
   margin-bottom: 0.5rem;
 }
 
-.section-richtext p {
+.section-richtext p,
+.section-richtext li {
   font-size: 1rem;
   line-height: 1.6;
+}
+
+.section-richtext li {
+  margin: 10px 0px;
 }
 
 .section-richtext img {
@@ -37,7 +42,8 @@
   .section-richtext h1 {
     font-size: 2rem;
   }
-  .section-richtext p {
+  .section-richtext p,
+  .section-richtext li {
     font-size: 1.2rem;
   }
 }
@@ -54,7 +60,8 @@
   .section-richtext h1 {
     font-size: 2.3rem;
   }
-  .section-richtext p {
+  .section-richtext p,
+  .section-richtext li {
     font-size: 1.4rem;
   }
   .section-richtext img {
