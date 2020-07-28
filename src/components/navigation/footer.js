@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "@reach/router"
+import logoBlue from "../../images/logo-blue.png"
 import "./footer.css"
 
 const Footer = props => {
@@ -6,9 +8,9 @@ const Footer = props => {
     <footer className="bx-footer">
       <div className="bx-navigation">
         <div className="trust-box">
-          <a className="logo" href="https://bxblue.com.br">
-            bxblue
-          </a>
+          <Link className="logo" to="/">
+            <img src={logoBlue} alt="bxblue" />
+          </Link>
           <script>
             TrustLogo("https://d3n0fx8toel08x.cloudfront.net/assets/new_layout/comodo_secure_seal-01011603211e5c3ba7d126360025c838d5a0d29a2938a3f2ca1e670982f8bf03.png",
             "SC5", "none");

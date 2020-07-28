@@ -12,8 +12,8 @@ const Page = props => {
         <React.Fragment key={index}>
           {!!ComponentsTree[component["__component"]] &&
             ComponentsTree[component["__component"]]({
-              ...component,
               ...props.pageContext,
+              ...component,
             })}
         </React.Fragment>
       ))}

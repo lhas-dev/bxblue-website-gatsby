@@ -7,6 +7,9 @@
 .bx-footer .bx-navigation .logo {
   color: #bcd;
 }
+.bx-footer .bx-navigation .logo img {
+  width: 120px;
+}
 .bx-button.-blue {
   color: #fff;
   background-color: #79f;

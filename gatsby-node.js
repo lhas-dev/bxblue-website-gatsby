@@ -28,11 +28,11 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Helper
   const getContext = params => ({
-    ...params,
     testimonials,
     menu,
     banks,
     faqs,
+    ...params,
   })
 
   // Declare routes for each page

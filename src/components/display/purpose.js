@@ -2,6 +2,7 @@ import React from "react"
 import "./purpose.css"
 
 const Purpose = props => {
+  console.log(props)
   return (
     <section className="section-purposes">
       <h2 className="title" dangerouslySetInnerHTML={{ __html: props.name }} />
