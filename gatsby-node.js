@@ -20,6 +20,10 @@ exports.createPages = async ({ graphql, actions }) => {
     res.json()
   )
 
+  const faqs = await fetch(`${process.env.API_URL}/faqs`).then(res =>
+    res.json()
+  )
+
   const home = pages.find(page => page.slug === "home")
 
   // Helper
@@ -28,6 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
     testimonials,
     menu,
     banks,
+    faqs,
   })
 
   // Declare routes for each page
