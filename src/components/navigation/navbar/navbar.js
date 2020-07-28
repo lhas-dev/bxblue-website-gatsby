@@ -52,7 +52,11 @@ const Navbar = props => {
             {props.menu.map(menu => getMenuComponent(menu))}
           </nav>
         </div>
-        <i className="fa fa-bars" onClick={handleBars}></i>
+        <button
+          className="fa fa-bars"
+          aria-label="Abrir e fechar menu"
+          onClick={handleBars}
+        ></button>
       </div>
     </header>
   )
