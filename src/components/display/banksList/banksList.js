@@ -1,67 +1,26 @@
 import React from "react"
+import { Link } from "@reach/router"
 import "./banksList.scss"
 
-const BanksList = () => {
+const BanksList = props => {
   return (
     <section className="section-banks-list">
-      <h1>Alguns dos nossos bancos parceiros de consignado</h1>
+      <h1>
+        {!!props.title
+          ? "Alguns dos nossos bancos parceiros de consignado"
+          : props.title}
+      </h1>
       <ul className="list">
-        <li>
-          <a href="#">
-            <img
-              src="https://d3n0fx8toel08x.cloudfront.net/assets/banks/landing/bancodobrasil-white-44d48341a2a303ce322d1912f10418ddef7184e5bbffbe1f1302d94d41118462.svg"
-              alt="banco"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="https://d3n0fx8toel08x.cloudfront.net/assets/banks/landing/bancodobrasil-white-44d48341a2a303ce322d1912f10418ddef7184e5bbffbe1f1302d94d41118462.svg"
-              alt="banco"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="https://d3n0fx8toel08x.cloudfront.net/assets/banks/landing/bancodobrasil-white-44d48341a2a303ce322d1912f10418ddef7184e5bbffbe1f1302d94d41118462.svg"
-              alt="banco"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="https://d3n0fx8toel08x.cloudfront.net/assets/banks/landing/bancodobrasil-white-44d48341a2a303ce322d1912f10418ddef7184e5bbffbe1f1302d94d41118462.svg"
-              alt="banco"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="https://d3n0fx8toel08x.cloudfront.net/assets/banks/landing/bancodobrasil-white-44d48341a2a303ce322d1912f10418ddef7184e5bbffbe1f1302d94d41118462.svg"
-              alt="banco"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="https://d3n0fx8toel08x.cloudfront.net/assets/banks/landing/bancodobrasil-white-44d48341a2a303ce322d1912f10418ddef7184e5bbffbe1f1302d94d41118462.svg"
-              alt="banco"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              src="https://d3n0fx8toel08x.cloudfront.net/assets/banks/landing/bancodobrasil-white-44d48341a2a303ce322d1912f10418ddef7184e5bbffbe1f1302d94d41118462.svg"
-              alt="banco"
-            />
-          </a>
-        </li>
+        {props.banks.map(bank => (
+          <li key={bank.id}>
+            <Link
+              to={`/bancos/${bank.slug}`}
+              title={`Empréstimo pelo ${bank.name} com a bxblue`}
+            >
+              <img src={bank.featured_image.url} alt={bank.name} />
+            </Link>
+          </li>
+        ))}
       </ul>
     </section>
   )

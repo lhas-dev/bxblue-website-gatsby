@@ -16,7 +16,7 @@ exports.createPages = async ({ graphql, actions }) => {
     `${process.env.API_URL}/depoimentos`
   ).then(res => res.json())
 
-  const banks = await fetch(`${process.env.API_URL}/bancos`).then(res =>
+  const banks = await fetch(`${process.env.API_URL}/banks`).then(res =>
     res.json()
   )
 

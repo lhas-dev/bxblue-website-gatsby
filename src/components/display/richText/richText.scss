@@ -46,6 +46,10 @@
   .section-richtext {
     padding: 3rem 6rem;
     flex-direction: row;
+
+    &.-direita {
+      flex-direction: row;
+    }
   }
   .section-richtext h1 {
     font-size: 2.3rem;
