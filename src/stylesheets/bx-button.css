@@ -31,6 +31,11 @@
   line-height: 1.5rem;
 }
 
+.bx-button.-blue {
+  color: #fff;
+  background-color: #79f;
+}
+
 @media (min-width: 992px) {
   .bx-button {
     font-size: 1.2rem;
