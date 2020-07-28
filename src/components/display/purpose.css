@@ -1,5 +1,5 @@
 .section-purposes {
-  padding: 6rem;
+  padding: 2rem;
   background-color: #ebf0f5;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@
   color: #6b8ae6;
   padding-right: 8vw;
   padding-left: 8vw;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   line-height: 3rem;
 }
 .section-purposes .title em {
@@ -23,21 +23,24 @@
 }
 
 .section-purposes .bx-button {
-  align-self: center;
-  margin: 0.5rem;
-}
-
-.bx-button {
-  letter-spacing: 0;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  margin: 0.75rem;
+  display: block;
 }
 
 .section-purposes .buttons {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .section-purposes {
+    padding: 6rem;
+  }
+  .section-purposes .buttons {
+    flex-direction: row;
+  }
+  .section-purposes .bx-button {
+    align-self: center;
+  }
 }
